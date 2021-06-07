@@ -1,0 +1,15 @@
+.horizontal-line-up {
+    width: 110%;
+    height: 5px;
+    margin-left: -2rem;
+    background-color: $gray-2;
+    transform: rotate(-20deg);
+}
+
+.horizontal-line-down {
+    width: 110%;
+    height: 5px;
+    margin-left: -1rem;
+    background-color: $gray-2;
+    transform: rotate(20deg);
+}

@@ -1,0 +1,12 @@
+.bg-img {
+    background-image: url("../assets/images/hantelregal2_fhd.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1080px auto;
+    z-index: -2;
+}
+.bg-gradient {
+    content: "";
+    background: $gradient;
+    z-index: -1;
+}

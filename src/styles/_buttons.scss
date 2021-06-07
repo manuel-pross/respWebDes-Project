@@ -1,0 +1,22 @@
+.btn-main {
+    position: relative;
+    font-family: "Oswald Bold";
+    font-size: 1.2rem;
+    padding: 0.5rem 3.5rem;
+    border: none;
+    background-color: $main-red-1;
+    color: $white;
+    max-width: 250px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 2px;
+        bottom: 0px;
+        left: -5px;
+        background-color: $main-red-2;
+        transform: rotate(-3deg);
+        z-index: -1;
+    }
+}
