@@ -1,0 +1,12 @@
+// Breakpoints
+@mixin breakpoint($device) {
+    @if $device == tablet {
+        @media screen and(min-width: 768px) { @content; }
+    }   
+    @else if $device == laptop {
+        @media screen and(min-width: 1124px) { @content; }
+    }
+    @else if $device == fullHD {
+        @media screen and(min-width: 1919px) { @content; }
+    }
+}

@@ -1,12 +1,6 @@
 .btn-main {
     position: relative;
-    font-family: "Oswald Bold";
-    font-size: 1.2rem;
-    padding: 0.5rem 3.5rem;
-    border: none;
-    background-color: $main-red-1;
-    color: $white;
-    max-width: 250px;
+    text-decoration: none;
 
     &::after {
         content: "";
@@ -19,4 +13,21 @@
         transform: rotate(-3deg);
         z-index: -1;
     }
+}
+
+.btn-text {
+    font-family: "Oswald Bold";
+    display: block;
+    padding: 0.5rem 3.5rem;
+    background-color: $main-red-1;
+    color: $white;
+    transition: $transition;
+
+    @include breakpoint(laptop) {
+        &:hover {
+            cursor: pointer;
+            transform: rotate(0) translateX(3px) translateY(-2px);
+        }
+    }
+
 }

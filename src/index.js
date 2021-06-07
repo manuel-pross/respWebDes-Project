@@ -1,4 +1,3 @@
-
 import "./styles/main.scss";
 
 import $ from "jquery";
@@ -9,5 +8,13 @@ console.log("hello");
 
 $('.header__carousel').slick({
     centerMode: true,
-    arrows: false
+    arrows: true,
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+              arrows: false,
+          }
+        }
+      ]
 });

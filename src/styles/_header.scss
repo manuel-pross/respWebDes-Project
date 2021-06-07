@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 1.5rem 0 4rem 0;
+    padding: 1.5rem 1rem 4rem 1rem;
     z-index: 1;
 
     &__logo {
@@ -24,6 +23,7 @@
     
     &__img-wrapper {
         width: 100%;
+        max-width: 750px;
     }
 
     &__carousel {
@@ -38,10 +38,4 @@
 .slick-slide > div {
     display: flex;
     justify-content: center;
-}
-
-.slick-dots li button {
-    background: url("../assets/images/hantelscheibe.png");
-    text-indent: -9999px;
-    overflow: hidden;
 }
