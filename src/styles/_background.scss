@@ -1,9 +1,16 @@
 .bg-img {
-    background-image: url("../assets/images/hantelregal2_fhd.jpg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 1080px auto;
     z-index: -3;
+
+    &--1 {
+        background-image: url("../assets/images/hantelregal2_fhd.jpg");
+    }
+
+    &--2 {
+        background-image: url("../assets/images/hantelregal_fhd.jpg");
+    }
 
     @include breakpoint(laptop) {
         background-position: unset;
