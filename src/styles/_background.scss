@@ -4,6 +4,11 @@
     background-position: right center;
     background-size: 1080px auto;
     z-index: -3;
+
+    @include breakpoint(laptop) {
+        background-position: unset;
+        background-size: unset;
+    }
 }
 .bg-gradient {
     content: "";

@@ -4,12 +4,22 @@
     margin-left: -2rem;
     background-color: $gray-2;
     transform: rotate(-20deg);
+
+    @include breakpoint(tablet) {
+        margin-left: -4rem;
+        transform: rotate(-8deg);
+    }
 }
 
 .horizontal-line-down {
     width: 110%;
     height: 5px;
-    margin-left: -1rem;
+    margin-left: -2rem;
     background-color: $gray-2;
     transform: rotate(20deg);
+
+    @include breakpoint(tablet) {
+        margin-left: -4rem;
+        transform: rotate(8deg);
+    }
 }

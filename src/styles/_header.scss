@@ -1,16 +1,83 @@
 .header {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1.5rem 1rem 4rem 1rem;
     z-index: 1;
 
-    &__logo {
+    &__logo-mobile {
         display: block;
         margin: 0 auto;
         width: 100px;
         height: auto;
+
+        @include breakpoint(laptop) {
+            display: none;
+        }
+    }
+
+    &__logo-desktop {
+        display: none;
+
+        @include breakpoint(laptop) {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            display: block;
+            margin: 0 auto;
+            width: 12%;
+            height: auto;
+        }
+    }
+
+    &__desktop {
+        width: 100%;
+        z-index: 1;
+
+        @include breakpoint(laptop) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 600px;
+            justify-items: center;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include breakpoint(laptop) {
+            order: 2;
+            align-items: flex-start;
+        }
+    }
+
+    &__desktop-imgs {
+        @include breakpoint(laptop) {
+            order: 1;
+            position: relative;
+        }
+    }
+
+    &__desktop-img {
+        position: absolute;
+        width: 200px !important;
+
+        &--1 {
+            bottom: 20%;
+            left: 20%;
+        }
+
+        &--2 {
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        &--3 {
+            top: 60%;
+            right: 60%;
+        }
     }
 
     &__main-heading {
@@ -19,15 +86,44 @@
 
     &__sub-heading {
         text-align: center;
+        margin-bottom: 1.5rem !important;
     }
-    
-    &__img-wrapper {
-        width: 100%;
-        max-width: 750px;
+
+    &__desc {
+        margin-bottom: 3rem;
     }
 
     &__carousel {
-        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 750px;
+        margin-bottom: 1.5rem;
+
+        @include breakpoint(laptop) {
+            display: none;
+        }
+    }
+
+    &__pricing-desc {
+        font-family: "Oswald Normal";
+        text-align: center;
+        color: $main-red-1;
+        margin-bottom: 1rem !important;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 1.5rem !important;
+        }
+    }
+
+    &__cta {
+
+    }
+
+    &__desktop-imgs {
+        display: none;
+
+        @include breakpoint(laptop) {
+            display: block;
+        }
     }
 
     &__carousel-img {
