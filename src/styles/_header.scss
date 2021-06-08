@@ -131,7 +131,51 @@
     }
 }
 
+.slick-arrow {
+    @include breakpoint(laptop) {
+        cursor: pointer;
+    }
+}
+
 .slick-slide > div {
     display: flex;
     justify-content: center;
+}
+
+.slick-arrow-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.arrow-content-prev {
+    border: solid $main-red-1;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 13px;
+    transform: rotate(-225deg);
+}
+
+.slick-arrow-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.arrow-content-next {
+    border: solid $main-red-1;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 13px;
+    transform: rotate(-45deg);
 }
