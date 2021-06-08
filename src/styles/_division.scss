@@ -1,0 +1,38 @@
+.division {
+    &__arrow-icon {
+        display: block;
+        margin: 0 auto;
+        width: 64px;
+        height: auto;
+    
+        @include breakpoint(laptop) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__horizontal-line-up {
+        width: 110%;
+        height: 5px;
+        margin-left: -2rem;
+        background-color: $gray-2;
+        transform: rotate(-20deg);
+    
+        @include breakpoint(tablet) {
+            margin-left: -4rem;
+            transform: rotate(-8deg);
+        }
+    }
+    
+    &__horizontal-line-down {
+        width: 110%;
+        height: 5px;
+        margin-left: -2rem;
+        background-color: $gray-2;
+        transform: rotate(20deg);
+    
+        @include breakpoint(tablet) {
+            margin-left: -4rem;
+            transform: rotate(8deg);
+        }
+    }
+}
