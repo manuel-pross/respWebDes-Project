@@ -2,7 +2,6 @@
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 1080px auto;
-    z-index: -3;
 
     &--1 {
         background-image: url("../assets/images/hantelregal2_fhd.jpg");
@@ -12,13 +11,15 @@
         background-image: url("../assets/images/hantelregal_fhd.jpg");
     }
 
+    &--3 {
+        background-image: url("../assets/images/kabelturm_fhd.jpg");
+    }
+
     @include breakpoint(laptop) {
         background-position: unset;
         background-size: unset;
     }
 }
 .bg-gradient {
-    content: "";
     background: $gradient;
-    z-index: -2;
 }

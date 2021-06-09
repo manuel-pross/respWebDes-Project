@@ -1,7 +1,15 @@
-.hide-on-mobile {
-    display: none;
+.hide-on-mobile-block {
+    display: none !important;
 
-    @include breakpoint(tablet) {
-        display: block;
+    @include breakpoint(laptop) {
+        display: block !important;
+    }
+}
+
+.hide-on-mobile-flex {
+    display: none !important;
+
+    @include breakpoint(laptop) {
+        display: flex !important;
     }
 }
