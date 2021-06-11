@@ -1,9 +1,9 @@
-html {
-    background-color: $gray-2;
-}
-
-body {
+html, body {
     margin: 0 auto;
     overflow-x: hidden;
     max-width: 1920px;
+}
+
+html {
+    background-color: $gray-2;
 }

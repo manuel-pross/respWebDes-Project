@@ -1,18 +1,21 @@
 .bg-img {
     background-repeat: no-repeat;
-    background-position: right center;
     background-size: 1080px auto;
 
     &--1 {
         background-image: url("../assets/images/hantelregal2_fhd.jpg");
+        background-position: right center;
     }
 
     &--2 {
         background-image: url("../assets/images/hantelregal_fhd.jpg");
+        background-position: right center;
     }
 
     &--3 {
         background-image: url("../assets/images/kabelturm_fhd.jpg");
+        background-position: center center;
+        background-size: unset;
     }
 
     @include breakpoint(laptop) {

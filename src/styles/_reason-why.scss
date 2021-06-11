@@ -3,6 +3,10 @@
     margin-bottom: 0.5rem;
 
     @include breakpoint(laptop) {
+        padding: 3.5rem 1rem 0 1.5rem;
+    }
+
+    @include breakpoint(laptop) {
         margin-bottom: 2.25rem;
     }
 

@@ -1,42 +1,31 @@
 .h1 {
     font-family: "Oswald Bold";
-    font-size: clamp(3rem, 6vw, 50px);
+    font-size: clamp(2.5rem, 6vw, 50px);
     margin:  0 0 clamp(1.75rem, 1.4vw, 2.5rem)  0;
     color: $main-red-1;
     text-align: center;
-
-    @include breakpoint(laptop) {
-        text-align: left;
-    }
 }
 
 .h2 {
     font-family: "Oswald Bold";
-    font-size: clamp(1.75rem, 5vw, 37px);
+    font-size: clamp(2rem, 5vw, 37px);
     margin:  0 0 clamp(1.5rem, 1.2vw, 2.25rem) 0;
     color: $main-red-1;
     text-align: center;
-
-    @include breakpoint(laptop) {
-        text-align: left;
-    }
 }
 
 .h3 {
     font-family: "Oswald Bold";
-    font-size: clamp(1rem, 4vw, 28px);
+    font-size: clamp(1.5rem, 4vw, 28px);
     margin:  0 0 clamp(1.25rem, 1vw, 2rem) 0;
     color: $main-red-1;
     text-align: center;
 
-    @include breakpoint(laptop) {
-        text-align: left;
-    }
 }
 
 p {
     font-family: "Yanone Normal";
-    font-size: clamp(0.75rem, 2vw, 24px);
+    font-size: clamp(1.25rem, 2vw, 24px);
     line-height: 24px;
     margin:  0 0 clamp(0.5rem, 1vw, 2rem) 0;
     color: $white;
