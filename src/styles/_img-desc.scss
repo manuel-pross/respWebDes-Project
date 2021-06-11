@@ -34,7 +34,11 @@
     }
 
     &__text-heading {
-        text-align: left;
+        text-align: center;
+
+        @include breakpoint(laptop) {
+            text-align: left;
+        }
     }
 
     &__img {

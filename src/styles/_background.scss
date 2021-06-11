@@ -18,6 +18,12 @@
         background-size: unset;
     }
 
+    &--4 {
+        background-image: url("../assets/images/langhantel_fhd.jpg");
+        background-position: center center;
+        background-size: unset;
+    }
+
     @include breakpoint(laptop) {
         background-position: unset;
         background-size: unset;
