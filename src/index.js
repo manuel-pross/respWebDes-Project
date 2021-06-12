@@ -21,17 +21,27 @@ $(".header__carousel").slick({
 });
 
 $(".photo-wall__carousel").slick({
-    centerMode: true,
+    slidesToShow: 1,
     arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     prevArrow:
-        "<div class='slick-arrow-prev'><span class='arrow-content-prev'></span></div>",
+        "<div class='slick-arrow-prev'><span class='arrow-content-prev arrow-content-prev--photo-wall'></span></div>",
     nextArrow:
-        "<div class='slick-arrow-next'><span class='arrow-content-next'></span></div>",
+        "<div class='slick-arrow-next'><span class='arrow-content-next arrow-content-next--photo-wall'></span></div>",
     responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            },
+        },
         {
             breakpoint: 768,
             settings: {
-                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
             },
         },
     ],
