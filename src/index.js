@@ -2,6 +2,11 @@ import "./styles/main.scss";
 
 import $ from "jquery";
 import "slick-carousel";
+import AOS from 'aos';
+
+AOS.init({
+    disable: "phone",
+});
 
 $(".header__carousel").slick({
     centerMode: true,
