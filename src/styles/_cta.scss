@@ -1,0 +1,14 @@
+.cta {
+    padding: 10rem 0;
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 2.5rem 1rem;
+        background-color: $gray-3;
+
+        @include breakpoint(laptop) {
+            padding: 4rem 1rem;
+        }
+    }
+}

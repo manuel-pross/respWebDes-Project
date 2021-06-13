@@ -5,11 +5,21 @@
     &--1 {
         background-image: url("../assets/images/hantelregal2_fhd.jpg");
         background-position: right center;
+
+        @include breakpoint(laptop) {
+            background-position: unset;
+            background-size: unset;
+        }
     }
 
     &--2 {
         background-image: url("../assets/images/hantelregal_fhd.jpg");
         background-position: right center;
+
+        @include breakpoint(laptop) {
+            background-position: unset;
+            background-size: unset;
+        }
     }
 
     &--3 {
@@ -22,13 +32,19 @@
         background-image: url("../assets/images/langhantel_fhd.jpg");
         background-position: center center;
         background-size: unset;
+
+        @include breakpoint(laptop) {
+            background-image: url("../assets/images/langhantel_gross.jpg");
+        }
     }
 
-    @include breakpoint(laptop) {
-        background-position: unset;
+    &--5 {
+        background-image: url("../assets/images/hantelbank_fhd.jpg");
+        background-position: center center;
         background-size: unset;
     }
 }
+
 .bg-gradient {
     background: $gradient;
 }
