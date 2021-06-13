@@ -2,10 +2,12 @@ import "./styles/main.scss";
 
 import $ from "jquery";
 import "slick-carousel";
-import AOS from 'aos';
+import AOS from "aos";
+
+const btnBackToTop = document.querySelector("#btnBackToTop");
 
 AOS.init({
-    disable: "phone",
+    disable: "mobile",
 });
 
 $(".header__carousel").slick({
@@ -31,15 +33,24 @@ $(".photo-wall__carousel").slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
             },
         },
         {
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
             },
         },
     ],
 });
+
+window.onscroll = () => {
+    console.log(window.scrollY);
+    if(window.scrollY > 500) {
+        btnBackToTop.classList.add("display-block");
+    } else {
+        btnBackToTop.classList.remove("display-block");
+    }
+};

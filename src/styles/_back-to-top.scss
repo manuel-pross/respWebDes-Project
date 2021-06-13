@@ -1,0 +1,42 @@
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 12px;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
+
+    &__inner-wrapper {
+        position: relative;
+    }
+    
+    &__fg {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: $main-red-2;
+        z-index: 1;
+    }
+
+    &__bg {
+        width: 50px;
+        height: 50px;
+        background-color: $black;
+        transform: rotate(-3deg) translateX(-5px);
+        z-index: -1;
+    }
+    
+    &__arrow {
+        display: inline-block;
+        border: solid $white;
+        border-width: 0 6px 6px 0;
+        padding: 10px;
+        margin-top: 12px;
+        transform: rotate(-135deg);
+
+    }
+}
