@@ -1,0 +1,17 @@
+.footer {
+    padding: 1.5rem 1rem;
+    background-color: $main-red-1;
+    z-index: 1;
+
+    @include breakpoint(laptop) {
+        padding: 3rem 1rem;
+    }
+
+    &__desc {
+        margin-bottom: 0;
+
+        @include breakpoint(laptop) {
+            text-align: center;
+        }
+    }
+}

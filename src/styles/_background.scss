@@ -47,4 +47,12 @@
 
 .bg-gradient {
     background: $gradient;
+
+    &--5 {
+        padding-bottom: 5.5rem;
+
+        @include breakpoint(mobile) {
+            padding-bottom: 9rem;
+        }
+    }
 }
