@@ -31,6 +31,11 @@
             width: 12%;
             height: auto;
         }
+
+        @include breakpoint(fullHD) {
+            top: 15px;
+            left: 15px;
+        }
     }
 
     &__desktop {
@@ -140,7 +145,7 @@
 .slick-arrow {
     width: 50px;
     height: 50px;
-    background-color: $black;
+    background-color: $gray-3;
     @include breakpoint(laptop) {
         cursor: pointer;
     }
@@ -163,10 +168,11 @@
 }
 
 .arrow-content-prev {
-    border: solid $main-red-1;
+    border: solid $white;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 10px;
+    margin-left: 10px;
     transform: rotate(-225deg);
 }
 
@@ -182,9 +188,10 @@
 }
 
 .arrow-content-next {
-    border: solid $main-red-1;
+    border: solid $white;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 10px;
+    margin-right: 10px;
     transform: rotate(-45deg);
 }

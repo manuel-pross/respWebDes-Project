@@ -10,14 +10,6 @@ $(".header__carousel").slick({
         "<div class='slick-arrow-prev'><span class='arrow-content-prev'></span></div>",
     nextArrow:
         "<div class='slick-arrow-next'><span class='arrow-content-next'></span></div>",
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-            },
-        },
-    ],
 });
 
 $(".photo-wall__carousel").slick({
@@ -26,9 +18,9 @@ $(".photo-wall__carousel").slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     prevArrow:
-        "<div class='slick-arrow-prev'><span class='arrow-content-prev arrow-content-prev--photo-wall'></span></div>",
+        "<div class='slick-arrow-prev'><span class='arrow-content-prev'></span></div>",
     nextArrow:
-        "<div class='slick-arrow-next'><span class='arrow-content-next arrow-content-next--photo-wall'></span></div>",
+        "<div class='slick-arrow-next'><span class='arrow-content-next'></span></div>",
     responsive: [
         {
             breakpoint: 1024,

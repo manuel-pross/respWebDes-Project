@@ -2,7 +2,8 @@
     position: relative;
     text-decoration: none;
     display: block;
-    max-width: 250px;
+    min-width: 250px;
+    max-width: 300px;
     z-index: 1;
 
     &::after {
@@ -20,6 +21,7 @@
 
 .btn-text {
     font-family: "Oswald Bold";
+    font-size: clamp(1.25rem, 2vw, 18px);
     display: block;
     text-align: center;
     padding: 0.5rem 3.5rem;

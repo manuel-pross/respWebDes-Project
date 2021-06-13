@@ -31,12 +31,12 @@
     &__horizontal-line-down {
         width: 115%;
         height: 5px;
-        margin-left: -1.75rem;
+        margin: clamp(0.25rem, 3.25vw, 28px) 0 0 -1.75rem;
         background-color: $gray-2;
         transform: rotate(20deg);
 
         @include breakpoint(tablet) {
-            margin-left: -4rem;
+            margin: clamp(0.25rem, 1.25vw, 20px) 0 0 -4rem;
             transform: rotate(8deg);
         }
     }
