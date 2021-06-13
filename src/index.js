@@ -3,12 +3,15 @@ import "./styles/main.scss";
 import $ from "jquery";
 import "slick-carousel";
 import AOS from "aos";
+import lazylad from "lazyload";
 
 const btnBackToTop = document.querySelector("#btnBackToTop");
 
 AOS.init({
     disable: "mobile",
 });
+
+lazyload();
 
 $(".header__carousel").slick({
     centerMode: true,
@@ -47,7 +50,6 @@ $(".photo-wall__carousel").slick({
 });
 
 window.onscroll = () => {
-    console.log(window.scrollY);
     if(window.scrollY > 500) {
         btnBackToTop.classList.add("display-block");
     } else {
