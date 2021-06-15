@@ -98,6 +98,10 @@
 
     &__sub-heading {
         text-align: center;
+
+        @include breakpoint(laptop) {
+            text-align: left;
+        }
     }
 
     &__desc {

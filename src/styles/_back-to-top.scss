@@ -7,6 +7,16 @@
     opacity: 0;
     transition: opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
 
+    @include breakpoint(laptop) {
+        &:hover {
+            cursor: pointer;
+
+            .back-to-top__fg {
+                transform: rotate(0) translateX(3px) translateY(-2px);
+            }
+        }
+    }
+
     &__inner-wrapper {
         position: relative;
     }
@@ -20,6 +30,7 @@
         height: 50px;
         background-color: $main-red-2;
         z-index: 1;
+        transition: $transition;
     }
 
     &__bg {
