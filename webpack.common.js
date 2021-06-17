@@ -11,6 +11,7 @@ module.exports = {
             template: "./src/template.html", // Damit gibt man an, dass die HTML dynamisch erzeugt werden soll mit eben jenem Template. Das brauchen wir weil das JS-File dynamisch reinkommen soll
             inject: "body",
             scriptLoading: "blocking",
+            favicon: "./src/assets/images/favicon.png"
         }),
     ],
     module: {
