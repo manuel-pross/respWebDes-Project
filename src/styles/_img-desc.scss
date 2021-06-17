@@ -2,34 +2,48 @@
     padding: 3.5rem 1rem 0 1rem;
 
     @include breakpoint(laptop) {
-        padding: 3.5rem 1rem 0 1.5rem;
+        padding: 3.5rem 1rem 1.5rem 1rem;
+    }
+
+    @include breakpoint(fullHD) {
+        padding: 3.5rem 2rem 1.5rem 4.5rem;
     }
 
     &__inner-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
 
         &:last-child {
             margin-bottom: 0;
         }
 
         @include breakpoint(laptop) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            margin-bottom: 2.75rem;
+            flex-direction: row;
+            margin-bottom: 4rem;
 
             &:nth-child(even) {
-                direction: rtl;
+                flex-direction: row-reverse;
             }
+        }
+    }
+
+    &__img-wrapper {
+        @include breakpoint(laptop) {
+            display: flex;
+            justify-content: center;
+            flex: 2;
         }
     }
 
     &__text-wrapper {
         @include breakpoint(laptop) {
-            justify-self: left;
+            flex: 2;
+        }
+
+        @include breakpoint(fullHD) {
+            flex: 3;
         }
     }
 
